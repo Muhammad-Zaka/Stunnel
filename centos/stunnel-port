@@ -5,18 +5,11 @@ socket = a:SO_REUSEADDR=1
 socket = l:TCP_NODELAY=1
 socket = r:TCP_NODELAY=1
 
-[openssl]
-connect = 127.0.0.1:22
-accept = 222
 
-[openssl2]
-connect = 127.0.0.1:143
+[dropbear]
+connect = 127.0.0.1:442
 accept = 443
 
-[dropbearssl]
-connect = 127.0.0.1:77
-accept = 777
-
-[dropbearssl]
-connect = 127.0.0.1:44
-accept = 444
+[openvpn]
+connect = 127.0.0.1:1193
+accept = 143
